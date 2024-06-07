@@ -1,0 +1,40 @@
+
+#perfil, #editar-perfil, #carrinho {
+    padding: 20px;
+    text-align: center;
+}
+
+.perfil-content, .carrinho-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.perfil-info, .perfil-actions {
+    flex: 1 1 300px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.perfil-info h3, .perfil-info p {
+    margin-bottom: 10px;
+}
+
+.carrinho-content ul {
+    list-style: none;
+    padding: 0;
+}
+
+.carrinho-content li {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.carrinho-content button {
+    margin-left: 10px;
+}

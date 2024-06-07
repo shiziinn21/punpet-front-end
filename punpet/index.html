@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <title>PetShop Punpet</title>
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/home.css">
+    <link rel="stylesheet" href="styles/menu.css">
+    <link rel="stylesheet" href="styles/pets.css">
+    <link rel="stylesheet" href="styles/servico.css"> 
+    <link rel="stylesheet" href="styles/cadastrar.css"> 
+    <link rel="stylesheet" href="styles/perfil.css">
+</head>
+<body>
+    <header>
+        <nav id="navbar">
+        <img src="imagens/logo.png" id="nav_logo">
+
+        <ul id="nav_list">
+            <li class="nav-item active">
+                <a href="#home">Início</a>
+            </li>
+            <li class="nav-item ">
+                <a href="#produtos">Produtos</a> 
+            </li> 
+            <li class="nav-item">
+                <a href="#pets">Pets</a>
+            </li>
+        </ul>
+        <button type="button" class="btn-login" onclick="window.location.href='perfil.html'">
+            <i class="fa-solid fa-user"></i>
+        </button>
+        
+
+        <button type="button" class="btn-default" onclick="window.location.href='cadastrar.html'">Sair</button>
+
+        <button id="mobile_btn">
+            <i class="fa-solid fa-bars"></i> 
+        </button>
+        </nav>
+        <div id="mobile_menu">
+
+            <ul id="mobile_nav_list">
+                <li class="nav-item ">
+                    <a href="#home">Início</a>
+                </li>
+                <li class="nav-item">
+                <a href="#produtos">Produtos</a> 
+            </li> 
+                <li class="nav-item">
+                    <a href="#pets">Pets</a>
+                </li>
+            </ul>
+
+            <button type="button" class="btn-default" onclick="window.location.href='perfil.html'">
+                <i class="fa-solid fa-user"></i>
+            </button>
+
+            <button type="button" class="btn-default" onclick="window.location.href='cadastrar.html'">Sair</button>
+    
+        </div>
+
+    </header>
+
+    <main id="content">
+
+        <section id="home">
+            <div class="shape"></div>
+            <div id="cta">
+                <h1 class="title"> 
+                    Um mundo de <span>amor</span> em cada patinha 
+                </h1>
+
+                <p class="descrição"> 
+                    Produtos e cuidados de qualidade
+                    para garantir a felicidade e saúde do seu pet
+                </p>
+
+                <div id="cta_buttons">
+                    <a href="#serviços" class="btn-default">
+                        Ver serviços
+                    </a>
+                
+                    <a href="tel:+55(21)99999-9999" id="phone_button">
+                        <button class="btn-default">
+                            <i class="fa-solid fa-phone"></i>
+                        </button>
+                        (21) 99999-9999
+                    </a>
+                </div>
+
+                <div class="social-media-buttons">
+
+                    <a href="" >
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                
+                    <a href="" id="insta">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                    <a href="" id="face">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                </div>
+            </div>
+            <div id="banner">
+                <img src="imagens/dog_banner.png" alt="">
+            </div>
+        </section>
+
+        
+        
+        <section id="menu">
+            <h2 class="section-title">Nossos Produtos</h2>
+            <h3 class="section-subtitle">Confira a Nossa Variedade!</h3>
+
+            <div id="produtos"> 
+                <div class="produto">
+                    <div>
+                        <img src="imagens/1717513207376 (1).png" class="produto-image" alt="racao">
+
+                        <h3 class="prod-title">
+                            ração
+                        </h3>
+
+                        <span class="prod-description">
+                            aaaaaaaaaaaaaaaaaaaaa
+                        </span>
+
+                        <div class="preco">
+                            <h4>R$20.00</h4>
+                            <button class="btn-default" onclick="adicionaraocarrinho(1)">
+                                <i class="fa-solid fa-basket-shopping"></i>
+                            </button>
+                        </div>
+                    </div> 
+                </div>
+
+                <div class="produto">
+                    <div>
+                        <img src="imagens/1717513207376 (1).png" class="produto-image" alt="racao">
+
+                        <h3 class="prod-title">
+                            ração
+                        </h3>
+
+                        <span class="prod-description">
+                            aaaaaaaaaaaaaaaaaaaaa
+                        </span>
+
+                        <div class="preco">
+                            <h4>R$20.00</h4>
+                            <button class="btn-default" onclick="adicionaraocarrinho(2)">
+                                <i class="fa-solid fa-basket-shopping"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="produto">
+                    <div>
+                        <img src="imagens/1717513207376 (1).png" class="produto-image" alt="racao">
+
+                        <h3 class="prod-title">
+                            ração
+                        </h3>
+
+                        <span class="prod-description">
+                            aaaaaaaaaaaaaaaaaaaaa
+                        </span>
+
+                        <div class="preco">
+                            <h4>R$20.00</h4>
+                            <button class="btn-default" onclick="adicionaraocarrinho(3)">
+                                <i class="fa-solid fa-basket-shopping"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="produto">
+                    <div>
+                        <img src="imagens/1717513207376 (1).png" class="produto-image" alt="racao">
+
+                        <h3 class="prod-title">
+                            ração
+                        </h3>
+
+                        <span class="prod-description">
+                            aaaaaaaaaaaaaaaaaaaaa
+                        </span>
+
+                        <div class="preco">
+                            <h4>R$20.00</h4>
+                            <button class="btn-default" onclick="adicionaraocarrinho(4)">
+                                <i class="fa-solid fa-basket-shopping"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+                <div class="produto">
+                    <div>
+                        <img src="imagens/1717513207376 (1).png" class="produto-image" alt="racao">
+
+                        <h3 class="prod-title">
+                            ração
+                        </h3>
+
+                        <span class="prod-description">
+                            aaaaaaaaaaaaaaaaaaaaa
+                        </span>
+
+                        <div class="preco">
+                            <h4>R$20.00</h4>
+                            <button class="btn-default" onclick="adicionaraocarrinho(5)">
+                                <i class="fa-solid fa-basket-shopping"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="produto">
+                    <div>
+                        <img src="imagens/1717513207376 (1).png" class="produto-image" alt="racao">
+
+                        <h3 class="prod-title">
+                            ração
+                        </h3>
+
+                        <span class="prod-description">
+                            aaaaaaaaaaaaaaaaaaaaa
+                        </span>
+
+                        <div class="preco">
+                            <h4>R$20.00</h4>
+                            <button class="btn-default" onclick="adicionaraocarrinho(6)">
+                                <i class="fa-solid fa-basket-shopping"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+        </section>
+
+        <section id="pets">
+            <h2 class="section-title">Pets</h2>
+            <h3 class="section-subtitle">Um mundo de amor e carinho!</h3>
+            <div class="pets-content">
+                <div class="pet-section" id="gatos">
+                    <img src="imagens/Picsart_24-06-05_14-21-27-088.png" alt="Gato">
+                    <h4>Gatos</h4>
+                    <p>Descubra a fofura dos felinos e tudo sobre seus cuidados.</p>
+                    <a href="gatos.html" class="btn-default">Saiba Mais</a>
+                </div>
+                <div class="pet-section" id="cachorros">
+                    <img src="imagens/pug.png" alt="Cachorro">
+                    <h4>Cachorros</h4>
+                    <p>Os melhores amigos do homem, Aprenda sobre eles</p>
+                    <a href="cachorros.html" class="btn-default">Saiba Mais</a>
+                </div>
+                <div class="pet-section" id="outros">
+                    <img src="imagens/morepet.png" alt="outros">
+                    <h4>Outros Pets</h4>
+                    <p>Explore o mundo dos pássaros, peixes, roedores e muito mais!</p>
+                    <a href="outros.html" class="btn-default">Saiba Mais</a>
+                </div>
+            </div>
+        </section>
+        
+        <section id="serviços">
+            <h2 class="section-title">Serviços</h2>
+            <h3 class="section-subtitle">Cuidados especiais para seu pet</h3>
+
+            <div id="servicos-content">
+                <div class="servico" id="banhoetosa">
+                    <img src="imagens/banho&tosa.jfif" alt="Banho & Tosa">
+                    <h4>Banho & Tosa</h4>
+                    <p>Deixe seu pet cheiroso e com o visual impecável.</p>
+                    
+            
+                            <form method="post" action="">
+                                
+                                <div class="form-group">
+                                    <label for="nome-pet">Nome do Pet:</label>
+                                    <input type="text" id="nome-pet" name="nome-pet" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="idade-pet">Idade do Pet:</label>
+                                    <input type="number" id="idade-pet" name="idade-pet" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="tipo-pet">Tipo de Animal:</label>
+                                    <select id="tipo-pet" name="tipo-pet" required>
+                                        <option value="Cachorro">Cachorro</option>
+                                        <option value="Gato">Gato</option>
+                                        <option value="Outro">Outro</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="raca-pet">Raça do Pet:</label>
+                                    <input type="text" id="raca-pet" name="raca-pet" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="data-agendamento">Data Agendada:</label>
+                                    <input type="date" id="data-agendamento" name="data-agendamento" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="detalhes-banho">Detalhes do Banho:</label>
+                                    <textarea id="detalhes-banho" name="detalhes-banho"></textarea>
+                                </div>
+                                <div class="form-group">
+                                    <label for="observacoes">Observações:</label>
+                                    <textarea id="observacoes" name="observacoes"></textarea>
+                                </div>
+                                <button type="submit" class="btn-default">Agendar</button> 
+                                <p>Faça login para agendar serviços.</p>
+                                <button type="button" class="btn-default" onclick="window.location.href='login.html'">Login</button>
+                            </form>
+                        
+                            
+                            
+                        
+
+                </div>
+            </div>
+        </section>
+
+        <section id="menu">
+            </section>
+
+
+    </main>
+
+
+    <script src="javascript/script.js">
+    
+    function adicionarAoCarrinho(produtoId) {
+
+        let carrinho = JSON.parse(localStorage.getItem('carrinho')) || [];
+
+        let produtoExistente = carrinho.find(item => item.id === produtoId);
+
+        if (produtoExistente) {
+            produtoExistente.quantidade++;
+        } else {
+            carrinho.push({ id: produtoId, quantidade: 1 }); 
+        }
+
+        localStorage.setItem('carrinho', JSON.stringify(carrinho));
+
+        window.location.href = 'perfil.html'; 
+    }
+    </script>
+
+
+</body>
+</html>

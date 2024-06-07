@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <title>PetShop Punpet</title>
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/home.css">
+    <link rel="stylesheet" href="styles/menu.css">
+    <link rel="stylesheet" href="styles/pets.css">
+    <link rel="stylesheet" href="styles/servico.css"> 
+    <link rel="stylesheet" href="styles/cadastrar.css"> 
+    <link rel="stylesheet" href="styles/perfil.css">
+</head>
+<body>
+    <header>
+        <nav id="navbar">
+        <img src="imagens/logo.png" id="nav_logo">
+
+        <ul id="nav_list">
+            <li class="nav-item active">
+                <a href="#home">Início</a>
+            </li>
+            <li class="nav-item ">
+                <a href="#produtos">Produtos</a> 
+            </li> 
+            <li class="nav-item">
+                <a href="#pets">Pets</a>
+            </li>
+        </ul>
+        <button type="button" class="btn-login" onclick="window.location.href='perfil.html'">
+            <i class="fa-solid fa-user"></i>
+        </button>
+        
+
+        <button type="button" class="btn-default" onclick="window.location.href='cadastrar.html'">Sair</button>
+
+        <button id="mobile_btn">
+            <i class="fa-solid fa-bars"></i> 
+        </button>
+        </nav>
+        <div id="mobile_menu">
+
+            <ul id="mobile_nav_list">
+                <li class="nav-item ">
+                    <a href="#home">Início</a>
+                </li>
+                <li class="nav-item">
+                <a href="#produtos">Produtos</a> 
+            </li> 
+                <li class="nav-item">
+                    <a href="#pets">Pets</a>
+                </li>
+            </ul>
+
+            <button type="button" class="btn-default" onclick="window.location.href='perfil.html'">
+                <i class="fa-solid fa-user"></i>
+            </button>
+
+            <button type="button" class="btn-default" onclick="window.location.href='cadastrar.html'">Sair</button>
+    
+        </div>
+
+    </header>
+    <main id="content">
+        <section id="editar-perfil">
+            <h2 class="section-title">Editar Perfil</h2>
+            <form method="POST" action="{% url 'editar_perfil' %}">
+                {% csrf_token %}
+                <div class="form-group">
+                    <label for="first_name">Nome:</label>
+                    <input type="text" id="first_name" name="first_name" value="{{ user.first_name }}" required>
+                </div>
+                <div class="form-group">
+                    <label for="last_name">Sobrenome:</label>
+                    <input type="text" id="last_name" name="last_name" value="{{ user.last_name }}" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" value="{{ user.email }}" required>
+                </div>
+                <div class="form-group">
+                    <label for="endereco">Endereço:</label>
+                    <input type="text" id="endereco" name="endereco" value="{{ user.endereco }}" required>
+                </div>
+                <button type="submit" class="btn-default">Salvar Alterações</button>
+            </form>
+        </section>
+    </main>
+
+    <script src="javascript/script.js"></script> 
+</body>
+</html>

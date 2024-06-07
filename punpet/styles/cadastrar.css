@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.cadastro-container {
+    display: flex;
+    height: 100vh;
+    background-color: #fff3d5;
+    background-image: url("imagens/fundo-animado.png"); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    color: rgb(181, 81, 110); 
+    font-family: sans-serif;
+    animation: fundo-animado 5s linear infinite;
+}
+
+@keyframes fundo-animado {
+    0% {
+    background-position: 0 0;
+    }
+    100% {
+    background-position: 100% 0;
+    }
+}
+
+.cadastro-left {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.cadastro-right {
+    width: 50%;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.cadastro-right h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input {
+    padding: 10px;
+    border: 1px solid rgb(142, 224, 214);
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+    background-color: #f2f2f2; 
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: rgb(181, 81, 110);
+}
+
+.btn-default {
+    padding: 10px 20px;
+    background-color: rgb(181, 81, 110);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-default:hover {
+    background-color: rgb(142, 224, 214);
+}
+
+.login-link {
+    text-align: center;
+    margin-top: 20px; 
+}
+
+.login-link p {
+    font-size: 14px;
+}
+
+.login-link a {
+    color: rgb(181, 81, 110); 
+    text-decoration: none; 
+    font-weight: bold; 
+}
+
+.login-link a:hover {
+    text-decoration: underline; 
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.cadastro-container {
+    display: flex;
+    height: 100vh;
+    background-color: #fff3d5;
+    background-image: url("imagens/fundo-animado.png"); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    color: rgb(181, 81, 110); 
+    font-family: sans-serif;
+    animation: fundo-animado 5s linear infinite;
+}
+
+@keyframes fundo-animado {
+0% {
+    background-position: 0 0;
+}
+100% {
+    background-position: 100% 0;
+}
+}
+
+.cadastro-left {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.cadastro-right {
+    width: 50%;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.cadastro-right h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input {
+    padding: 10px;
+    border: 1px solid rgb(142, 224, 214);
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+    background-color: #f2f2f2; 
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: rgb(181, 81, 110); 
+}
+
+
+.login-link {
+    text-align: center;
+    margin-top: 20px; 
+}
+
+.login-link p {
+    font-size: 14px;
+}
+
+.login-link a {
+    color: rgb(181, 81, 110); 
+    text-decoration: none; 
+    font-weight: bold; 
+}
+
+.login-link a:hover {
+    text-decoration: underline; 
+}
